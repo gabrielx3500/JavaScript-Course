@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Funciones en Javascript</title>
+</head>
+<body>
+	<script>
+		function saludo(){
+			var saludo = document.write("Hola Amigo...!");
+			return saludo;
+		};
+
+		function dos(a,b,c){
+			var datos = document.write("Mi Nombre es: " + a + "<br>Mi Apellido es: " + b + "<br>" + "Mi edad es: " + c);
+			return datos;
+		}
+
+		function tres(nombre = ""){
+		  var nombreCompleto = nombre;
+			return document.write(nombreCompleto);
+		}
+
+		function cuatro(nombre,apellido){
+			if(nombre!=null && apellido!=null){
+			respuesta = document.write(nombre + "-" + apellido); 	
+			}else{
+			respuesta = document.write("No pusiste todos tus datos completos"); 	
+			};
+			return respuesta;
+
+		}
+
+		function cinco(...meses){
+         for(let uno of meses){
+         	return document.write(uno + "<br>");
+         }
+		};
+		cinco("Enero","Febrero","Marzo","Abril","Mayo");
+
+		//Funcion anonima
+		var siete = function(){
+			respuesta = "Hola a todos";
+			return respuesta;
+		};
+		document.write(siete());
+		//////////////////
+
+
+        //Llamados a la funciones
+		saludo();
+		dos();
+		tres();
+		cuatro();
+
+	</script>
+</body>
+</html>	

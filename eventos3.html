@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Manejos de eventos de Teclado en Javascript</title>
+</head>
+<body>
+	
+
+
+
+	<button class="tres">Saludar</button>
+	<button onmouseover="encima()">Boton</button>
+	<button onmouseout="fuera()">Apretar</button>
+	<script>
+		/*
+		KeyDown
+		KeyPress
+		KeyUp
+         */
+
+         window.addListener("Keydown",function(){alert("Accion");});
+         window.addListener("Keyup",function(){alert("Accion");});
+         window.addListener("keypress",function(event){
+         	alert(event.KeyCode);
+         	alert(String.fromCharCode(event.KeyCode));
+         });
+	</script>
+</body>
+</html>	
