@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Arreglos en Javascript</title>
+</head>
+<body>
+	<script>
+   /*
+     Creating Date Objects
+     Date objects are created with the new Date() constructor.
+   */
+   //There are 4 ways to create a new date object:
+   new Date();
+   new Date(year,month,day,hours,minutes,seconds,milliseconds);
+   new Date(milliseconds);
+   new Date(date String);
+   //new Date() creates a new date object with the current date and time
+   var d = new Date();
+   var a = new Date(2019,11,24,10,33,30,0);
+   var b = new Date(2019,11,24);
+   var c = Date("2019");
+   //Mostramos resultados por pantallas
+   document.write("La fecha de hoy es: " + d);
+   document.write("La fecha de hoy es: " + a);
+   document.write("La fecha de hoy es: " + b);
+	</script>
+</body>
+</html>	

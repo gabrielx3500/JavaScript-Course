@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Arreglos en Javascript</title>
+</head>
+<body>
+	<script>
+    //Hay dos formas de crear un array:
+    //1.- Crear una variable
+    //2.- Crear una estructura con corchetes
+    /* 
+     Metodos de los arrays
+     length
+     push
+     pop
+     split
+
+    */
+    var semana = new Array("Lunes","Martes","Miercoles","Jueves","Viernes");
+    var semana = ["Lunes","Martes","Miercoles","Jueves","Viernes",4433];
+    var numeros = [23,45,56,67,88,90,4433];
+    //Arreglo multidimensional
+    var multidimensional = [
+                    [23,45,56,67,88,90,4433],
+                    [23,45,56,67,88,90,4433],
+                    [23,45,56,67,88,90,4433],
+                    [23,45,56,67,88,90,4433]
+                  ];
+    var dos = [10,20,30,40,50,"Lunes"];              
+    //Mostramos resultados por pantalla
+    document.write(semana[0]);
+    document.write(numeros[0]);
+    document.write(multidimensional[0][1]);
+    document.write(dos.pop());
+    document.write(dos.join());
+    document.write(dos.pop());
+	</script>
+</body>
+</html>	
